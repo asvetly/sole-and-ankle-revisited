@@ -61,6 +61,7 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow: hidden;
 
   @media ${ QUERIES.tabletAndBelow } {
     padding: 20px 32px;
@@ -74,7 +75,8 @@ const MainHeader = styled.div`
 const Nav = styled.nav`
   display: flex;
   gap: 48px;
-  margin: 0px 48px;
+  margin-left: 48px;
+  overflow: auto;
 
   @media ${ QUERIES.tabletAndBelow } {
     display: none;
